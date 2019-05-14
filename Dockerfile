@@ -1,6 +1,7 @@
 FROM ruby
 RUN apt update && apt install -y nodejs
-RUN git clone --depth=1 https://github.com/fastladder/fastladder /fastladder
+RUN mkdir /fastladder
+ADD . /fastladder
 WORKDIR /fastladder
 RUN bundle -j9
 RUN gem install foreman
