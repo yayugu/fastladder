@@ -450,6 +450,10 @@ a.feedlink{
 	margin : 13px 20px;
 }
 
+.item_body img {
+	max-width: 100%;
+}
+
 .item_footer{
 	height : 30px;
 	color : #747474;
